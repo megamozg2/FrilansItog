@@ -1,10 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>FC</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #e0f792;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .plus-button {
+            font-size: 24px;
+            margin-left: 10px;
+            padding: 2px 10px;
+            border: none;
+            background-color: #c7e86c;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .plus-button:hover {
+            background-color: #bde25b;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            width: 250px;
+            height: 28px;
+            padding: 4px 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f4fff1; /* мягкий фон поля */
+        }
+
+        .search-input::placeholder {
+            color: #888;
+        }
+
+        .right-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .button {
+            padding: 5px 10px;
+            background-color: #d4f285;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #c6e677;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            FC
+            <button class="plus-button">+</button>
+        </div>
 
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Поиск...">
+        </div>
+
+        <div class="right-buttons">
+            <div class="icon">🔍</div>
+            <button class="button">Вход</button>
+            <button class="button">Регистрация</button>
+        </div>
+    </header>
 </body>
 </html>
