@@ -9,7 +9,7 @@ def main():
     db_session.global_init("db/Frilans.db")
     app.run()
 
-@app.route("/")
+#@app.route("/")
 # def index():
 #     db_sess = db_session.create_session()
 #     jobs = db_sess.query(users).all()
